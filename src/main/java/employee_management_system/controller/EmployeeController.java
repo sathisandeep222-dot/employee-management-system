@@ -2,15 +2,15 @@ package employee_management_system.controller;
 
 import java.util.List;
 
-import jakarta.validation.Valid;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import employee_management_system.entity.Employee;
 import employee_management_system.service.EmployeeService;
+import jakarta.validation.Valid;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:5173")
 @RequestMapping("/employees")
 public class EmployeeController {
 
